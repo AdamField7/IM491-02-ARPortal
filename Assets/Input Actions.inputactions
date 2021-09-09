@@ -1,0 +1,33 @@
+{
+    "name": "Input Actions",
+    "maps": [
+        {
+            "name": "MainMap",
+            "id": "6ffe17cd-3bd7-4ab2-baff-ff0b3dcc84ce",
+            "actions": [
+                {
+                    "name": "UserTapped",
+                    "type": "Value",
+                    "id": "72996ccc-071f-4088-8a3e-3583aacec428",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dc92b28d-594f-4549-8beb-c830ece85b51",
+                    "path": "<Touchscreen>/touch0/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UserTapped",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
