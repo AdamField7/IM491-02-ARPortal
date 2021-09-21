@@ -31,6 +31,7 @@ public class ARRaycast : MonoBehaviour
                 if (Physics.Raycast(ray, out hitObject))
                 {
                     objectRef.transform.position = hitObject.point;
+                    objectRef.gameObject.SetActive(true);
                     TurnOffAllPlanes();
                 }
             }

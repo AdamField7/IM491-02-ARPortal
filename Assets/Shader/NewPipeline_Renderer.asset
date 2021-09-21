@@ -68,7 +68,8 @@ MonoBehaviour:
   - {fileID: -6208040682339203276}
   - {fileID: -6101207362347081673}
   - {fileID: 6522779386705996483}
-  m_RendererFeatureMap: 3487ff19e49bd8a937e04dc23a2854abc3ead9044b91855a
+  - {fileID: 6246910524573734583}
+  m_RendererFeatureMap: 3487ff19e49bd8a937e04dc23a2854abc3ead9044b91855ab7d6dd48067cb156
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -97,6 +98,45 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
+--- !u!114 &6246910524573734583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: BackWall
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    passTag: BackWall
+    Event: 250
+    filterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 256
+      PassNames: []
+    overrideMaterial: {fileID: 0}
+    overrideMaterialPassIndex: 0
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+    stencilSettings:
+      overrideStencilState: 1
+      stencilReference: 1
+      stencilCompareFunction: 6
+      passOperation: 0
+      failOperation: 5
+      zFailOperation: 5
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
 --- !u!114 &6522779386705996483
 MonoBehaviour:
   m_ObjectHideFlags: 0

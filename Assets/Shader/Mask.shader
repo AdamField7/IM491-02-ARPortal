@@ -1,15 +1,16 @@
 Shader "Unlit/Mask"
 {
-    Properties
-    {
-
-    }
     SubShader
     {
-        Tags{ " RenderType"="Opaque" }
-        Pass
-        {
-            ZWrite Off
-        }
+        ZWrite off
+        ColorMask 0
+        
+    Stencil
+    {
+        Ref 1
+        Pass replace
+    }
+
+        Pass { }
     }
 }
