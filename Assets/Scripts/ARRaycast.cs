@@ -10,6 +10,7 @@ public class ARRaycast : MonoBehaviour
     public List<GameObject> Planes;
     public ARPlaneManager ARPM;
     public static ARRaycast ARRC;
+    public bool canPlace = true;
 
 
     public void Start()
@@ -20,19 +21,23 @@ public class ARRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.touchCount > 0 )
+        if(canPlace)
         {
-            Touch touch = Input.GetTouch(0);
-            
-            if(touch.phase == TouchPhase.Began)
+            if (Input.touchCount > 0)
             {
-                Ray ray = ARCamera.ScreenPointToRay(touch.position);
-                RaycastHit hitObject;
-                if (Physics.Raycast(ray, out hitObject))
+                Touch touch = Input.GetTouch(0);
+
+                if (touch.phase == TouchPhase.Began)
                 {
-                    objectRef.transform.position = hitObject.point;
-                    objectRef.gameObject.SetActive(true);
-                    TurnOffAllPlanes();
+                    Ray ray = ARCamera.ScreenPointToRay(touch.position);
+                    RaycastHit hitObject;
+                    if (Physics.Raycast(ray, out hitObject))
+                    {
+                        objectRef.transform.position = hitObject.point;
+                        objectRef.gameObject.SetActive(true);
+                        TurnOffAllPlanes();
+                        canPlace = false;
+                    }
                 }
             }
         }
