@@ -1885,7 +1885,7 @@ GameObject:
   - component: {fileID: 1177973800}
   - component: {fileID: 1177973799}
   - component: {fileID: 1177973798}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: portal collider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -2466,6 +2466,7 @@ GameObject:
   - component: {fileID: 1684718161}
   - component: {fileID: 1684718160}
   - component: {fileID: 1684718159}
+  - component: {fileID: 1684718163}
   m_Layer: 0
   m_Name: PortalFrame
   m_TagString: Untagged
@@ -2556,6 +2557,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1684718163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684718158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639beb0e44661634e8c5a8eb2a9dae87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1938857656}
 --- !u!1 &1770267886
 GameObject:
   m_ObjectHideFlags: 0
