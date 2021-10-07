@@ -18,11 +18,7 @@ public class TextReciever : MonoBehaviour
 
     public void Update()
     {
-        debugText.text = "";
-        foreach(var item in WhatWeWantToTrack)
-        {
-            debugText.text = debugText.text + item.name + ": " + item.position;
-        }
+
 
     }
 }

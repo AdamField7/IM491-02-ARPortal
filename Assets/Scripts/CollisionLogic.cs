@@ -17,6 +17,8 @@ public class CollisionLogic : MonoBehaviour
     {
         if(other.gameObject.tag == "Door")
         {
+            TextReciever.TR.debugText.text = "HIT";
+
             door = other.gameObject;
             foreach(Transform obj in DefaultLayerChildren.transform)
             {
