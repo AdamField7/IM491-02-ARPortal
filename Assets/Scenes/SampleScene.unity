@@ -1621,7 +1621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &872197683
 Transform:
   m_ObjectHideFlags: 0
@@ -1630,8 +1630,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872197682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 0, z: 6.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.14, y: 1.71, z: 6.88}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 1684718162}
   - {fileID: 162049962}
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ARCamera: {fileID: 1938857657}
-  objectRef: {fileID: 1684718158}
+  objectRef: {fileID: 872197682}
   Planes: []
   ARPM: {fileID: 975539552}
   canPlace: 1
@@ -2030,7 +2030,7 @@ GameObject:
   - component: {fileID: 1188818128}
   - component: {fileID: 1188818127}
   - component: {fileID: 1188818126}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: PortalLookingOUT
   m_TagString: Untagged
   m_Icon: {fileID: 0}

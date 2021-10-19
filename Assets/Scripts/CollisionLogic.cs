@@ -24,9 +24,7 @@ public class CollisionLogic : MonoBehaviour
                     if (Vector3.Dot(other.transform.forward, direction) > 0)
                     {
                         var objectDirection = other.transform.position - obj.transform.position;
-                        
-                            obj.gameObject.layer = 8;
-                        
+                        obj.gameObject.layer = 8;
                         lookingIN.gameObject.SetActive(false);
                         lookingOUT.gameObject.SetActive(true);
                     }
