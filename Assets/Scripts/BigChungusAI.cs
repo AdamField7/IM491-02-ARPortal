@@ -7,13 +7,13 @@ public class BigChungusAI : MonoBehaviour
     public Camera ARCamera;
     public GameObject chungus;
 
-    private Vector3 behindRockLeft = new Vector3(-6.5f, 0, 10.67f);
-    private Vector3 behindRockRight = new Vector3(5.5f, 0, 4.54f);
-    private Vector3 behindRockMiddle = new Vector3(0, 0, 13);
+    private Vector3 behindRockLeft = new Vector3(-6.89f, 1.54f, 18f);
+    private Vector3 behindRockRight = new Vector3(5.44f, 1.54f, 11.03f);
+    private Vector3 behindRockMiddle = new Vector3(0, 3.53f, 16.2f);
 
-    private Vector3 frontLeftRock = new Vector3(-4, 0, 10.67f);
-    private Vector3 frontRightRock = new Vector3(0, 0, 4.54f);
-    private Vector3 frontMiddleRock = new Vector3(-4, 0, 13);
+    private Vector3 frontLeftRock = new Vector3(0, 1.54f, 18);
+    private Vector3 frontRightRock = new Vector3(5.44f, 1.54f, 24.44f);
+    private Vector3 frontMiddleRock = new Vector3(0, 5.55f, 14.33f);
 
     private bool bigChungusIsNotMoving = true;
 
