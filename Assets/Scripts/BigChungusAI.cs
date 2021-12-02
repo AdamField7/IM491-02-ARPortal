@@ -7,13 +7,12 @@ public class BigChungusAI : MonoBehaviour
     public Camera ARCamera;
     public GameObject chungus;
 
-    private Vector3 behindRockLeft = new Vector3(-6.89f, 1.54f, 18f);
-    private Vector3 behindRockRight = new Vector3(5.44f, 1.54f, 11.03f);
-    private Vector3 behindRockMiddle = new Vector3(0, 3.53f, 16.2f);
-
-    private Vector3 frontLeftRock = new Vector3(0, 1.54f, 18);
-    private Vector3 frontRightRock = new Vector3(5.44f, 1.54f, 24.44f);
-    private Vector3 frontMiddleRock = new Vector3(0, 5.55f, 14.33f);
+    public GameObject right1;
+    public GameObject right2;
+    public GameObject middle1;
+    public GameObject middle2;
+    public GameObject left1;
+    public GameObject left2;
 
     private bool bigChungusIsNotMoving = true;
 
@@ -56,18 +55,18 @@ public class BigChungusAI : MonoBehaviour
                     {
                         if (hitObject.transform.tag == "LeftRock")
                         {
-                            chungus.transform.position = behindRockLeft;
-                            StartCoroutine(MoveOverSeconds(chungus, frontLeftRock, 5f));
+                            chungus.transform.position = left1.transform.position;
+                            StartCoroutine(MoveOverSeconds(chungus, left2.transform.position, 5f));
                         }
                         else if (hitObject.transform.tag == "RightRock")
                         {
-                            chungus.transform.position = behindRockRight;
-                            StartCoroutine(MoveOverSeconds(chungus, frontRightRock, 5f));
+                            chungus.transform.position = right1.transform.position;
+                            StartCoroutine(MoveOverSeconds(chungus, right2.transform.position, 5f));
                         }
                         else if (hitObject.transform.tag == "MiddleRock")
                         {
-                            chungus.transform.position = behindRockMiddle;
-                            StartCoroutine(MoveOverSeconds(chungus, frontMiddleRock, 5f));
+                            chungus.transform.position = middle1.transform.position;
+                            StartCoroutine(MoveOverSeconds(chungus, middle2.transform.position, 5f));
                         }
                     }
                 }
